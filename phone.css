@@ -1,0 +1,360 @@
+
+ /*T'Adore Tomeo */
+
+/*-------------Global Styles--------------*/
+body{
+	background-image: url("../images/fabric-pattern.png");
+	background-color: #eeeeee;
+	margin: 0;
+	color: #494948; 
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+.wrapper {
+	width: 1024px;
+	margin: 40px auto 0 auto;
+	background-color: #fff;
+	}
+
+.right{ float: right;}
+
+.left{ float: left;}
+
+.clear{ clear: both;}
+
+.row::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+header {
+	 background-color: #3b4044; 
+	 color: #ffffff; 
+	 padding: 20px; 
+	 border-top: solid 4px #e22121;
+}
+
+header h1, header h2 {
+margin: 0;
+}
+
+header h2 {
+font-weight: normal;
+}
+/*-----------Navigation-----------*/
+nav {
+	color: #ffffff; 
+	background-color: #e22121;
+	background: linear-gradient(#e22121, #ed7878);
+	font-size: 1.2em; 
+	padding: 20px; 
+	text-transform: uppercase;
+	}
+
+nav ul{
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	width: 70%;
+}
+
+nav ul li{
+display: inline-block;
+padding: 0.3em 0.3em;
+}
+
+nav ul li:hover{
+	background-color: #ed7878;
+}
+
+nav a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #fff;
+}
+
+nav a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+nav a:active {
+	color: gray;
+}
+/*----------Page----------*/
+main{
+	padding: 20px; 
+	line-height: 1.5em;
+}
+
+main h2{
+	color: #e22121;
+
+}
+/*----Home Page-----*/
+section.specials{
+	min-height: 265px;
+	padding: 20px;
+/*	background-image: url("../images/sucker.jpg");
+	background-repeat: no-repeat; */
+}
+
+section.specials p{
+	width: 800px;
+	margin-top: 65px;
+	/*margin-left: 255px;*/
+}
+
+.specials img{
+	margin-right: 20px;
+}
+
+/*----Products Page------*/
+section.products{
+	padding: 10px;
+	margin-left: 20px;
+}
+
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+figure{
+	/*float: left;*/
+	width: 283.66px;
+	padding: 0;
+	margin: 10px;
+	border: 3px solid red;
+	border-radius: 15%;
+/*	border-radius: 50%;*/
+	box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+figcaption{
+	text-align: center;
+	font-weight: bold;
+	padding: 0 0 20px 0;
+}
+
+figure img{
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+
+
+
+/*-----------Schedule A Party Page-----------*/
+
+.resrvdiv{
+	float:clear;
+	font-weight: bold;
+
+}
+.partymsg{
+	border: none;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 30px 0px 0px;
+	width: auto;
+	float: right;
+	
+}
+
+.avail{
+	border-color: rgba(0, 0, 0, 0.05);
+	border-width: 2px;
+	background-color: rgba(256,256,256,1);
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+	padding: 0px 35px;
+	margin: 0px 10px 0px 0px;
+	width: auto;
+	float:right;
+
+}
+.resrvd{
+	border-color: rgba(0, 0, 0, 0.05);
+	border-width: 2px;
+	background-color: rgba(123,220,188,1);
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+	padding: 0px 35px;
+	margin: 0px 215px 0px 0px;
+	width: auto;
+	float: right;
+}
+
+
+section.schedule table {
+	margin: 0 auto;
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: none;
+	border: 1px solid rgba(190,190,190,0.5);
+	padding: 10px 10px;
+	
+}
+
+thead th {
+column-span: 7;
+
+}
+.Nov18{
+	height: 95px;
+	font-size: 24px;
+	color: rgba(175,240,218,1);
+	box-shadow: inset -2px -2px 3px 3px rgba(0, 0, 0, 0.2), inset 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+td.reserved {
+	background-color: rgba(123,220,188,1)
+}
+
+tbody th {
+	background-color: rgba( 25,155,112,1);
+	color: rgba(175,240,218,1);
+	width: 70px;
+	height: auto;
+	border: 1px solid rgba(190,190,190,0.5);
+	box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+td {
+	width: 80px;
+	height: 80px;
+	box-shadow: inset 2px 2px rgba(0, 0, 0, 0.3), inset -1px -1px rgba(0, 0, 0, 0.1);
+	vertical-align: top;
+	border: 5px solid rgb(255, 255, 255);
+	padding: 2px 5px;
+}
+
+
+/*------Footer----------*/
+footer{
+	padding: 20px; 
+	background-color: rgb(221, 217, 217);
+	color: black;        /* #ffffff;*/
+	font-size: .9em;
+/*	text-align: center;*/
+}
+ 
+.top-footer{
+min-height: 300px;
+font-size: .8em;
+/*padding: 40px;*/
+}
+
+
+.top-footer aside{
+	width: 20.22%;
+	float: left;
+	margin-right: 1%;
+	padding: 2%;
+/*	background-color: greenyellow;*/ 
+}
+
+.top-footer aside.last{
+	float:right;
+	margin: 0px;
+}
+
+.top-footer aside.last address{
+	text-align: left;
+	padding-left: 20%;
+}
+.top-footer aside.last h3{
+	text-align: left;
+	padding-left: 20%;
+}
+
+.top-footer .nav{
+	background: none;
+	padding-left:15%;
+}
+
+.top-footer .nav ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.nav ul li{
+display: block;
+text-align: left;
+font-size: .8em;
+padding: 0.8em 0.2em;
+text-transform: capitalize;
+color: black;
+}
+.nav ul li:hover{
+	background-color: #ed7878;
+}
+
+.nav a:link {
+	color: black;
+	text-decoration: none;
+}
+
+
+.nav a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.nav a:active {
+	color: gray;
+}
+ 
+
+.bottom-footer{
+	text-align: center;
+	padding: 10px 0px;
+}
+
+/*------------------------SOCIAL ICONS----------------*/
+
+.fab.fa-twitter-square{
+	color: #1da1f2;
+}
+.fab.fa-google-plus-square{
+	color: #ea4335;
+}
+.fab.fa-facebook-square{
+	color: #3b5998;
+}
+.fab.fa-reddit-square{
+	color:#ff4500;
+}
+.top-footer input{
+	padding: 3px;
+}
+
+/*-------------FORM STYLES---------*/
+
+main input{
+	padding: 10px;
+	width: 135px;
+}
+main form{
+	min-height: 200px;
+	/*background-color: #ed7878;*/
+	width: 800px;
+	margin: 0 auto;
+}
+form div{
+	padding: 0px 0px 20px 0px;
+}
+fieldset{
+	border: 1px solid green;
+	border-radius: 15px;
+}
+
+
+
